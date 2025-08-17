@@ -1,0 +1,20 @@
+{
+  "name": "model",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "generate:2025": "tsx scripts/generateQueries.ts 2025.json queries-2025.json",
+    "generate:2024": "tsx scripts/generateQueries.ts 2024.json queries-2024.json",
+    "export:2025": "tsx scripts/exportAnchors.ts queries-2025.json anchors-2025.csv"
+  },
+  "dependencies": {
+    "openai": "^4.56.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.5.4",
+    "@types/node": "^20.14.10"
+  }
+}
