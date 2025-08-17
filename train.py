@@ -66,7 +66,7 @@ args = SentenceTransformerTrainingArguments(
     # Required parameter:
     output_dir="models/mpnet-base-all-nli-triplet",
     # Optional training parameters:
-    num_train_epochs=1,
+    num_train_epochs=10,
     per_device_train_batch_size=16,
     per_device_eval_batch_size=16,
     warmup_ratio=0.1,
